@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora de Média</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="numInput" placeholder="Digite um número">
+      </div>
+      <div class="numbers-display">
+        <p>Números digitados:</p>
+        <span id="numbersList">Nenhum número digitado</span>
+      </div>
+      <div class="buttons">
+        <button onclick="addNumber()">Adicionar Número</button>
+        <button onclick="calculateAverage()">Calcular Média</button>
+        <button onclick="resetCalculator()">Limpar</button>
+      </div>
+      <div class="result">
+        <p>Média:</p>
+        <span id="averageResult">0</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
